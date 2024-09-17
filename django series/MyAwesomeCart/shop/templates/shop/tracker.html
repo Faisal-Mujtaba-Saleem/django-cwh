@@ -1,0 +1,54 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}
+Tracker
+{% endblock %}
+
+{% block body %}
+{% comment %}Alert for "Thank you for your order"{% endcomment %}
+
+{% if redirected %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success:</strong> "Thanks for ordering us. Your order id is {{ order_id }}. Use it to track your order. We
+  will update you soon."
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endif %}
+
+<!-- Checkout container -->
+
+<div class="container py-4">
+  {% comment %}Row for Step 1 - Review Your Cart Items{% endcomment %}
+  <div class="row my-4">
+    <!-- Step 1 - Review Your Cart Items -->
+    <h2>Enter Your Order Id and Email address to track your order</h2>
+
+    <!-- Form -->
+    <form id="tracking-form" class="row g-3">
+      {% csrf_token %}
+
+      <div class="col-md-6">
+        <label for="tracking_id" class="form-label">Order Id</label>
+        <input type="text" class="form-control" id="tracking_id" name="tracking_id" />
+      </div>
+      <div class="col-md-6">
+        <label for="tracking_email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="tracking_email" name="tracking_email" />
+      </div>
+      <div class="col-12">
+        <button type="submit" id="track-order" class="btn btn-primary">Track Order</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Step 2 - Enter Address & Other Details: -->
+
+  <div class="row my-4 py-4">
+    <h2>Your Order Track:</h2>
+    <div id="order_track_container" class="col-md-12 my-4">
+      <p id="empty_track_message" hidden>Enter your order Id and Email and click Track Order to find details about your
+        order!</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

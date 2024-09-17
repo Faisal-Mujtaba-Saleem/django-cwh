@@ -1,0 +1,50 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}
+  Contact
+{% endblock %}
+
+{% block body %}
+  {% comment %}Alert to inform user that message was sent{% endcomment %}
+  <div class="alert alert-success alert-dismissible fade show {% if not contact_saved %}d-none{% endif %}" role="alert">
+    <strong>Success:</strong> Your message has been sent.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  {% comment %}Form to send a message{% endcomment %}
+  <div class="container my-3">
+    <h1 class="display-4 text-center">contact us</h1>
+
+    {% comment %}Contact form{% endcomment %}
+    <form action="/shop/contact/" method="post">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required />
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Tell Us, How Can We Help</label>
+        <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="interest" class="form-label">I am interested in</label>
+        <select class="form-select" id="interest" name="interest" required>
+          <option value="">Select an option</option>
+          <option value="purchasing">Purchasing</option>
+          <option value="selling">Selling</option>
+          <option value="feedback">Providing feedback</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-success my-3">Submit</button>
+    </form>
+  </div>
+{% endblock %}

@@ -1,0 +1,338 @@
+{
+    "products": [
+        {
+            "category": "Electronics",
+            "sub_category": "Smartphones",
+            "items": [
+                {
+                    "name": "Apple iPhone 14 Pro",
+                    "description": "The latest iPhone with a 6.1-inch Super Retina XDR display, A16 Bionic chip, and a triple-camera system with ProRAW and ProRes video recording.",
+                    "price": 999.00,
+                    "stock": 120,
+                    "sku": "IP14PRO-GR-256",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\iphone-14-pro.jpeg"
+                },
+                {
+                    "name": "Samsung Galaxy S23 Ultra",
+                    "description": "The Samsung Galaxy S23 Ultra features a 6.8-inch Dynamic AMOLED display, 200MP quad-camera setup, and the Snapdragon 8 Gen 2 processor.",
+                    "price": 1199.00,
+                    "stock": 75,
+                    "sku": "SG23U-BK-512",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\samsung-galaxy-s23-ultra.jpeg"
+                },
+                {
+                    "name": "Google Pixel 8 Pro",
+                    "description": "The Google Pixel 8 Pro offers a 6.7-inch LTPO OLED display, Tensor G3 chip, and a triple-camera system with advanced AI features.",
+                    "price": 899.00,
+                    "stock": 90,
+                    "sku": "GP8PRO-WH-128",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\google-pixel-8-pro.jpeg"
+                },
+                {
+                    "name": "OnePlus 11",
+                    "description": "The OnePlus 11 features a 6.7-inch AMOLED display, Snapdragon 8 Gen 2 processor, and a Hasselblad camera system.",
+                    "price": 799.00,
+                    "stock": 85,
+                    "sku": "OP11-BK-256",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\oneplus-11.jpeg"
+                },
+                {
+                    "name": "Xiaomi Mi 13 Pro",
+                    "description": "The Xiaomi Mi 13 Pro includes a 6.73-inch AMOLED display, Snapdragon 8 Gen 2 chip, and Leica camera technology.",
+                    "price": 849.00,
+                    "stock": 80,
+                    "sku": "XM13P-GL-128",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\xiaomi-mi-13-pro.jpeg"
+                },
+                {
+                    "name": "Sony Xperia 1 IV",
+                    "description": "The Sony Xperia 1 IV features a 6.5-inch 4K OLED display, Snapdragon 8 Gen 1 processor, and a triple-camera system.",
+                    "price": 1199.00,
+                    "stock": 70,
+                    "sku": "SX1IV-BK-256",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\sony-xperia-1-iv.jpeg"
+                },
+                {
+                    "name": "Oppo Find X6 Pro",
+                    "description": "The Oppo Find X6 Pro offers a 6.82-inch AMOLED display, Snapdragon 8 Gen 2 chip, and a Hasselblad camera system.",
+                    "price": 899.00,
+                    "stock": 65,
+                    "sku": "OPFX6P-BK-256",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\oppo-find-x6-pro.jpeg"
+                },
+                {
+                    "name": "Asus ROG Phone 7",
+                    "description": "The Asus ROG Phone 7 is designed for gaming with a 6.78-inch AMOLED display, Snapdragon 8 Gen 2, and enhanced cooling.",
+                    "price": 999.00,
+                    "stock": 55,
+                    "sku": "ASR7-GM-512",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\asus-rog-phone-7.jpeg"
+                }
+            ]
+        },
+        {
+            "category": "Home Appliances",
+            "sub_category": "Vacuums & Floor Care",
+            "items": [
+                {
+                    "name": "Dyson V15 Detect Cordless Vacuum",
+                    "description": "The most powerful and intelligent cordless vacuum by Dyson, featuring laser dust detection and up to 60 minutes of run time.",
+                    "price": 699.00,
+                    "stock": 45,
+                    "sku": "DYV15DCT-BL",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\dyson-v15-detect-cordless-vacuum-cleaner.jpeg"
+                },
+                {
+                    "name": "Roomba i7+ Robot Vacuum",
+                    "description": "The Roomba i7+ features Smart Mapping, powerful suction, and self-emptying capabilities for a hassle-free clean.",
+                    "price": 799.00,
+                    "stock": 60,
+                    "sku": "ROOI7P-BK",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\roomba-i7-plus.jpeg"
+                },
+                {
+                    "name": "Shark Navigator Lift-Away",
+                    "description": "A versatile vacuum with Lift-Away functionality, powerful suction, and a HEPA filter for a deep clean.",
+                    "price": 299.00,
+                    "stock": 70,
+                    "sku": "SHNAV-LIFT",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\shark-navigator-lift-away.jpeg"
+                },
+                {
+                    "name": "Eufy RoboVac 11S",
+                    "description": "The Eufy RoboVac 11S is a slim robot vacuum with strong suction power and a quiet operation.",
+                    "price": 229.00,
+                    "stock": 90,
+                    "sku": "EUV11S-BK",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\eufy-robovac-11s.jpeg"
+                },
+                {
+                    "name": "Bissell CrossWave",
+                    "description": "The Bissell CrossWave is a versatile wet/dry vacuum for cleaning both hard floors and carpets.",
+                    "price": 349.00,
+                    "stock": 50,
+                    "sku": "BIS-CW-VR",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\bissell-crosswave.jpeg"
+                },
+                {
+                    "name": "Dyson Ball Animal 2",
+                    "description": "A powerful vacuum by Dyson designed for homes with pets, featuring strong suction and advanced filtration.",
+                    "price": 499.00,
+                    "stock": 40,
+                    "sku": "DYB2-ANIMAL",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\dyson-ball-animal-2.jpeg"
+                },
+                {
+                    "name": "Miele Complete C3",
+                    "description": "The Miele Complete C3 is a canister vacuum with powerful suction and an advanced filtration system.",
+                    "price": 799.00,
+                    "stock": 30,
+                    "sku": "MIELE-C3",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\miele-complete-c3.jpeg"
+                },
+                {
+                    "name": "Hoover WindTunnel 3",
+                    "description": "The Hoover WindTunnel 3 offers powerful suction and a multi-floor brush roll for versatile cleaning.",
+                    "price": 249.00,
+                    "stock": 60,
+                    "sku": "HOOV-WT3",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\hoover-windtunnel-3.jpeg"
+                }
+            ]
+        },
+        {
+            "category": "Home Appliances",
+            "sub_category": "Televisions",
+            "items": [
+                {
+                    "name": "LG 55-Inch OLED TV",
+                    "description": "A 55-inch OLED TV with 4K Ultra HD resolution, AI-powered picture quality, and Dolby Vision IQ for immersive viewing experiences.",
+                    "price": 1299.00,
+                    "stock": 30,
+                    "sku": "LG55OLED-4K",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\lg-55-inch-oled-tv.jpeg"
+                },
+                {
+                    "name": "Sony 65-Inch 4K Ultra HD Smart TV",
+                    "description": "A 65-inch 4K Ultra HD Smart TV with HDR support, built-in Google Assistant, and a wide range of streaming options.",
+                    "price": 1599.00,
+                    "stock": 25,
+                    "sku": "SN65UHD-4K",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\sony-65-inch-4k-ultra-hd.jpeg"
+                },
+                {
+                    "name": "Samsung 75-Inch QLED TV",
+                    "description": "A 75-inch QLED TV with Quantum Dot technology, 4K resolution, and superior color accuracy for an immersive viewing experience.",
+                    "price": 2199.00,
+                    "stock": 20,
+                    "sku": "SM75QLED-4K",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\samsung-75-inch-qled.jpeg"
+                },
+                {
+                    "name": "TCL 50-Inch 4K Roku TV",
+                    "description": "A 50-inch 4K Roku TV with built-in Roku functionality for easy access to streaming services and excellent picture quality.",
+                    "price": 399.00,
+                    "stock": 50,
+                    "sku": "TCL50Roku-4K",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\tcl-50-inch-roku-tv.jpeg"
+                },
+                {
+                    "name": "Vizio 70-inch-4k Smart TV",
+                    "description": "A 65-inch 4K Smart TV with Smartcast platform for easy streaming and high-definition picture quality.",
+                    "price": 799.00,
+                    "stock": 40,
+                    "sku": "VIZ65SMART-4K",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\vizio-70-inch-4k.jpeg"
+                },
+                {
+                    "name": "Philips 58-Inch 4K UHD TV",
+                    "description": "A 43-inch 4K UHD TV with Ambilight technology for a more immersive viewing experience and vibrant colors.",
+                    "price": 499.00,
+                    "stock": 55,
+                    "sku": "PH43UHD-4K",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\philips-58-inch-4k.jpeg"
+                },
+                {
+                    "name": "Sharp 55-Inch Full HD TV",
+                    "description": "A 40-inch Full HD TV with excellent picture clarity and a slim design to fit any living room.",
+                    "price": 299.00,
+                    "stock": 60,
+                    "sku": "SH40FHD",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\sharp-55-inch-4k.jpeg"
+                }
+            ]
+        },
+        {
+            "category": "Fashion",
+            "sub_category": "Men",
+            "items": [
+                {
+                    "name": "Levi's 501 Original Fit Jeans",
+                    "description": "Classic straight-leg jeans with a button fly and five-pocket styling. Made from 100% cotton denim.",
+                    "price": 69.50,
+                    "stock": 120,
+                    "sku": "LV501-JEANS",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\levis-501-original-fit-jeans.jpeg"
+                },
+                {
+                    "name": "Nike Air Max 270",
+                    "description": "The Nike Air Max 270 features a large Max Air unit in the heel for cushioning and a sleek design for everyday wear.",
+                    "price": 150.00,
+                    "stock": 85,
+                    "sku": "NKA270-SHOES",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\nike-air-max-270.jpeg"
+                },
+                {
+                    "name": "Adidas Ultraboost 22 T-shirt",
+                    "description": "Comfortable cotton t-shirt with the classic Adidas logo on the chest. Available in multiple colors.",
+                    "price": 35.00,
+                    "stock": 200,
+                    "sku": "ADTSHIRT-BL",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\adidas-ultraboost-22.jpeg"
+                },
+                {
+                    "name": "Ralph Lauren Chinos Shirt",
+                    "description": "A timeless polo shirt with the Ralph Lauren logo embroidered on the chest. Made from breathable cotton.",
+                    "price": 89.50,
+                    "stock": 60,
+                    "sku": "RLPOL-SHIRT",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\ralph-lauren-chinos.jpeg"
+                },
+                {
+                    "name": "Abercrombie Flannel Shirt",
+                    "description": "A cozy flannel shirt from Abercrombie, featuring a classic check pattern and button-down front.",
+                    "price": 89.00,
+                    "stock": 45,
+                    "sku": "ABERFLAN-CHK",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\abercrombie-flannel-shirt.jpeg"
+                },
+                {
+                    "name": "Dockers Signature Khakis",
+                    "description": "Comfortable khaki pants from Dockers, featuring a classic fit and versatile styling.",
+                    "price": 59.50,
+                    "stock": 70,
+                    "sku": "DOCKERS-KHAKIS",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\dockers-signature-khakis.jpeg"
+                },
+                {
+                    "name": "Calvin Klein Graphic T-shirt",
+                    "description": "Stylish graphic t-shirt from Calvin Klein, made from soft cotton with a bold logo design.",
+                    "price": 40.00,
+                    "stock": 100,
+                    "sku": "CK-GRAPHIC-TSHIRT",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\calvin-klein-graphic-tshirt.jpeg"
+                },
+                {
+                    "name": "Converse Chuck Taylor All Star",
+                    "description": "Classic Converse Chuck Taylor All Star sneakers with a canvas upper and rubber sole.",
+                    "price": 65.00,
+                    "stock": 90,
+                    "sku": "CONV-CTAS",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\converse-chuck-taylor-all-star.jpeg"
+                },
+                {
+                    "name": "Hugo Boss Suit Jacket",
+                    "description": "A refined suit jacket from Hugo Boss, tailored from premium wool fabric with a modern cut.",
+                    "price": 299.00,
+                    "stock": 25,
+                    "sku": "HBSUIT-JACKET",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\hugo-boss-suit-jacket.jpeg"
+                }
+            ]
+        },
+        {
+            "category": "Fashion",
+            "sub_category": "Women",
+            "items": [
+                {
+                    "name": "Burberry Trench Coat",
+                    "description": "Classic Burberry trench coat with a timeless design, made from high-quality cotton gabardine.",
+                    "price": 1499.00,
+                    "stock": 10,
+                    "sku": "BURB-COAT",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\burberry-trench-coat.jpeg"
+                },
+                {
+                    "name": "Tommy Hilfiger Polo Shirt",
+                    "description": "Classic polo shirt from Tommy Hilfiger with a relaxed fit and embroidered logo.",
+                    "price": 59.50,
+                    "stock": 50,
+                    "sku": "TH-POLO",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\tommy-hilfiger-polo-shirt.jpeg"
+                },
+                {
+                    "name": "Vans Old Skool Sneakers",
+                    "description": "Iconic Vans Old Skool sneakers with a low-top silhouette and signature stripe.",
+                    "price": 70.00,
+                    "stock": 80,
+                    "sku": "VANS-OLD-SKOOL",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\vans-old-skool.jpeg"
+                },
+                {
+                    "name": "New Balance 990v5",
+                    "description": "The New Balance 990v5 combines classic style with modern cushioning and support.",
+                    "price": 185.00,
+                    "stock": 50,
+                    "sku": "NB990V5-SHOES",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\new-balance-990v5.jpeg"
+                },
+                {
+                    "name": "Reebok Classic Leather",
+                    "description": "The Reebok Classic Leather features a timeless design with a soft leather upper and EVA midsole for cushioning.",
+                    "price": 75.00,
+                    "stock": 55,
+                    "sku": "REEB-CL",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\reebok-classic-leather.jpeg"
+                },
+                {
+                    "name": "Puma RS-X",
+                    "description": "The Puma RS-X is a modern sneaker with a bold design and comfortable fit, perfect for everyday wear.",
+                    "price": 110.00,
+                    "stock": 65,
+                    "sku": "PUM-RSX",
+                    "image_path": "C:\\Users\\Faisal\\OneDrive\\Pictures\\Saved Pictures\\my_awesome_cart\\puma-rs-x.jpeg"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}
+  {{ product.name }}
+{% endblock %}
+
+{% block body %}
+  {% load static %}
+  <input type="text" id="preview-product" value="{{ preview_product }}" hidden />
+  <div class="container">
+    <div class="card m-3 h-100 w-100 border-0">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/media/{{ product.image }}" class="card-img-top" alt="{{ product.name }}" style="height: 200px; object-fit: fill;" />
+          <div class="btn-group w-100 h-100 d-flex align-items-center" role="group" aria-label="Basic mixed styles example">
+            <button type="button" id="buy-now-product_{{ product.product_id }}" class="buy-now-button btn btn-success rounded mx-2 py-2 w-50">Buy Now</button>
+            <span id="product-controls_{{ product.product_id }}" class="product-controls w-50"><button type="button" id="product_{{ product.product_id }}" class="addToCart-btn btn btn-primary rounded mx-2 py-2 w-100">Add To Cart</button></span>
+            {% comment %} <button type="button" class="btn btn-success py-2 w-50">Buy Now</button>
+            <button type="button" class="btn btn-primary py-2 w-50">Add To Cart</button> {% endcomment %}
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3 class="card-title">{{ product.name }} - {{ product.sku }}</h3>
+            <p class="card-text">{{ product.description }}</p>
+            <p>
+              <b>Price: {{ product.price }}</b>
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated {{ product.publishedAt }}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
