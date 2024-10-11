@@ -1,0 +1,35 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}
+  login
+{% endblock %}
+
+{% block body %}
+  <main class="form-signin w-100 m-auto">
+    <div class="container my-4 py-4 w-50 d-flex justify-content-center">
+      <form class="w-50" method="post" action="/shop/login/">
+        {% csrf_token %}
+
+        <h1 class="h3 mb-3 fw-normal">Please login</h1>
+
+        <div class="form-floating my-3">
+          <input type="text" class="form-control" id="loginUsernameInput" name="username" placeholder="username" />
+          <label for="loginUsernameInput">Username</label>
+        </div>
+        <div class="form-floating my-3">
+          <input type="email" class="form-control" id="loginEmailInput" name="email" placeholder="name@example.com" />
+          <label for="loginEmailInput">Email address</label>
+        </div>
+        <div class="form-floating my-3">
+          <input type="password" class="form-control" id="loginPassword" name="password" placeholder="Password" />
+          <label for="loginPassword">Password</label>
+        </div>
+        <div class="my-3">
+          <small>Don't have an account? <a href="/shop/signup/">Signup</a></small>
+        </div>
+        <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+        <p class="my-3 text-body-secondary text-center">© {{ current_year }}</p>
+      </form>
+    </div>
+  </main>
+{% endblock %}
