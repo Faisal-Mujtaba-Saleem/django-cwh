@@ -1,4 +1,4 @@
-from shop.models import Product
+import logging
 import os
 import django
 import json
@@ -10,17 +10,21 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_awesome_cart.settings')
 django.setup()
 
 # Import your model after setting up Django
+from shop.models import Product
 
 incorrect_paths = []
+
+logger = logging.getLogger(__name__)
 
 
 def upload_products_to_db(name, sku, description, price, stock, category, sub_category, image_path):
     if not os.path.exists(image_path):
         incorrect_paths.append(image_path)
+        logger.error(f'Incorrect path: {image_path}')
         return
 
     if Product.objects.filter(sku=sku).exists():
-        print(f'Product with SKU {sku} already exists')
+        logger.info(f'Product with SKU {sku} already exists')
         return
 
     with open(image_path, 'rb') as image_file:
@@ -40,7 +44,7 @@ def upload_products_to_db(name, sku, description, price, stock, category, sub_ca
         )
         product.save()
 
-        print(f'Product {name} uploaded successfully!')
+        logger.info(f'Product {name} uploaded successfully!')
 
 
 if __name__ == "__main__":
@@ -51,10 +55,10 @@ if __name__ == "__main__":
                 category = product['category']
                 sub_category = product['sub_category']
                 for item in product['items']:
-                    # Debugging print statement
-                    print(f'Processing item')
+                    # Debugging log statement
+                    logger.debug(f'Processing item')
                     if 'sku' not in item:
-                        print(f'Missing SKU in item: {item}')
+                        logger.error(f'Missing SKU in item: {item}')
                         continue
 
                     upload_products_to_db(
@@ -62,10 +66,10 @@ if __name__ == "__main__":
                     )
 
         if incorrect_paths:
-            print(f'Incorrect paths: {incorrect_paths}')
+            logger.error(f'Incorrect paths: {incorrect_paths}')
 
     except Exception as e:
-        print(f'Error: {e}')
+        logger.error(f'Error: {e}')
 
     finally:
-        print('Done!')
+        logger.info('Done!')
