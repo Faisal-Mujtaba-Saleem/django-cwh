@@ -9,12 +9,15 @@ from django.utils import timezone
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_awesome_cart.settings')
 django.setup()
 
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 # Import your model after setting up Django
 from shop.models import Product
 
+# Initializing the incorrect_paths list
 incorrect_paths = []
-
-logger = logging.getLogger(__name__)
 
 
 def upload_products_to_db(name, sku, description, price, stock, category, sub_category, image_path):
